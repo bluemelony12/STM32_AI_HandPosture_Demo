@@ -1,0 +1,965 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Main_Menu",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "backgronds",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "__generated\\dark_theme_images_backgrounds_800x480_hive.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Title_Bar",
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\dark_theme_images_bars_800x480_bottom_dim_dark.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Title",
+            "X": 148,
+            "Y": 17,
+            "Width": 504,
+            "Height": 48,
+            "TextId": "__SingleUse_OU2G",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "GitLink",
+            "X": 515,
+            "Y": 438,
+            "Width": 261,
+            "Height": 24,
+            "TextId": "__SingleUse_8TG1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 163,
+              "Green": 163,
+              "Blue": 163
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Disc1",
+            "X": 295,
+            "Y": 90,
+            "Width": 210,
+            "Height": 24,
+            "TextId": "__SingleUse_NAQV",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 89,
+              "Green": 247,
+              "Blue": 74
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Disc2",
+            "X": 86,
+            "Y": 373,
+            "Width": 135,
+            "Height": 24,
+            "TextId": "__SingleUse_HUUO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 242,
+              "Green": 242,
+              "Blue": 242
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Disc3",
+            "X": 313,
+            "Y": 373,
+            "Width": 175,
+            "Height": 24,
+            "TextId": "__SingleUse_0S7M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 242,
+              "Green": 242,
+              "Blue": 242
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Disc4",
+            "X": 577,
+            "Y": 373,
+            "Width": 131,
+            "Height": 24,
+            "TextId": "__SingleUse_SCMP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 242,
+              "Green": 242,
+              "Blue": 242
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "Menu1_B",
+            "X": 43,
+            "Y": 140,
+            "Width": 220,
+            "Height": 220,
+            "Color": {
+              "Red": 76,
+              "Green": 76,
+              "Blue": 76
+            },
+            "CenterX": 110.0,
+            "CenterY": 110.0,
+            "Radius": 110.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Circle",
+            "Name": "Menu2_B",
+            "X": 290,
+            "Y": 140,
+            "Width": 220,
+            "Height": 220,
+            "Color": {
+              "Red": 76,
+              "Green": 76,
+              "Blue": 76
+            },
+            "CenterX": 110.0,
+            "CenterY": 110.0,
+            "Radius": 110.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Circle",
+            "Name": "Menu3_B",
+            "X": 532,
+            "Y": 140,
+            "Width": 220,
+            "Height": 220,
+            "Color": {
+              "Red": 76,
+              "Green": 76,
+              "Blue": 76
+            },
+            "CenterX": 110.0,
+            "CenterY": 110.0,
+            "Radius": 110.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Menu1",
+            "X": 53,
+            "Y": 150,
+            "Width": 200,
+            "Height": 200,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "ImageButtonStyle",
+                "ImageReleased": "hands.png",
+                "ImagePressed": "hands.png"
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Menu2",
+            "X": 301,
+            "Y": 151,
+            "Width": 200,
+            "Height": 200,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "ImageButtonStyle",
+                "ImageReleased": "light.png",
+                "ImagePressed": "light.png"
+              }
+            ]
+          },
+          {
+            "Type": "FlexButton",
+            "Name": "Menu3",
+            "X": 542,
+            "Y": 150,
+            "Width": 200,
+            "Height": 200,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "ImageButtonStyle",
+                "ImageReleased": "select.png",
+                "ImagePressed": "select.png"
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Move_Menu1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Hand_Posture"
+            }
+          },
+          {
+            "InteractionName": "Move_Menu2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Light_Dim_Control"
+            }
+          },
+          {
+            "InteractionName": "Move_Menu3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Menu3"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Select_Target"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Hand_Posture",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "backgronds",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "__generated\\dark_theme_images_backgrounds_800x480_hive.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Title_Bar",
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\dark_theme_images_bars_800x480_bottom_dim_dark.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Title",
+            "X": 256,
+            "Y": 17,
+            "Width": 288,
+            "Height": 48,
+            "TextId": "__SingleUse_4OJ2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Disc1",
+            "X": 164,
+            "Y": 90,
+            "Width": 472,
+            "Height": 24,
+            "TextId": "__SingleUse_E1JC",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 89,
+              "Green": 247,
+              "Blue": 74
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "Circle",
+            "Name": "HandPosture_Back",
+            "X": 57,
+            "Y": 148,
+            "Width": 300,
+            "Height": 300,
+            "Color": {
+              "Red": 158,
+              "Green": 158,
+              "Blue": 158
+            },
+            "CenterX": 150.0,
+            "CenterY": 150.0,
+            "Radius": 150.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Box",
+            "Name": "Pred_Val_Box",
+            "X": 400,
+            "Y": 164,
+            "Width": 349,
+            "Height": 238,
+            "Color": {
+              "Red": 54,
+              "Green": 52,
+              "Blue": 52
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Val1",
+            "X": 436,
+            "Y": 199,
+            "Width": 234,
+            "Height": 36,
+            "TextId": "__SingleUse_FR96",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_F6R3",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_4CKG",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Val2",
+            "X": 436,
+            "Y": 262,
+            "Width": 234,
+            "Height": 36,
+            "TextId": "__SingleUse_FXVI",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_Q1BX",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_TJ8C",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Val3",
+            "X": 436,
+            "Y": 328,
+            "Width": 234,
+            "Height": 36,
+            "TextId": "__SingleUse_LV25",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_XYPM",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Wildcard2": {
+              "TextId": "__SingleUse_L67M",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "Result_Img",
+            "X": 107,
+            "Y": 189,
+            "Width": 200,
+            "Height": 200,
+            "Filename": "None.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "BackButton",
+            "X": 670,
+            "Y": 424,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\dark_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\dark_theme_images_widgets_button_regular_height_36_tiny_round_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
+            "IconX": 25,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "dark_theme\\presets\\button\\regular\\height_36\\tiny_round_normal.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back_Menu",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BackButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Main_Menu"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Light_Dim_Control",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "backgronds",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "__generated\\dark_theme_images_backgrounds_800x480_hive.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Title_Bar",
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\dark_theme_images_bars_800x480_bottom_dim_dark.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Title",
+            "X": 196,
+            "Y": 16,
+            "Width": 408,
+            "Height": 48,
+            "TextId": "__SingleUse_AQQ0",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Disc1",
+            "X": 160,
+            "Y": 90,
+            "Width": 481,
+            "Height": 24,
+            "TextId": "__SingleUse_CT22",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 89,
+              "Green": 247,
+              "Blue": 74
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "BackButton",
+            "X": 670,
+            "Y": 424,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\dark_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\dark_theme_images_widgets_button_regular_height_36_tiny_round_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
+            "IconX": 25,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "dark_theme\\presets\\button\\regular\\height_36\\tiny_round_normal.json"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "Bulb",
+            "X": 93,
+            "Y": 115,
+            "Width": 400,
+            "Height": 350,
+            "Filename": "Dim.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "Image",
+            "Name": "DimLight",
+            "X": 192,
+            "Y": 171,
+            "Width": 200,
+            "Height": 200,
+            "RelativeFilename": "Dim10.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Dim_Val",
+            "X": 514,
+            "Y": 353,
+            "Width": 180,
+            "Height": 36,
+            "TextId": "__SingleUse_1V3J",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_JSQ5",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "Gauge",
+            "Name": "gauge1",
+            "X": 510,
+            "Y": 169,
+            "Width": 184,
+            "Height": 184,
+            "Preset": "dark_theme\\presets\\gauges\\small\\dark_filled.json",
+            "FileNameBackground": "__generated\\dark_theme_images_widgets_gauge_small_backgrounds_dark_filled.png",
+            "RotationCenterX": 92.0,
+            "RotationCenterY": 92.0,
+            "StartAngle": -119.0,
+            "EndAngle": 122.0,
+            "RangeMax": 100.0,
+            "UseAnimation": true,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "__generated\\dark_theme_images_widgets_gauge_small_needles_rough.png",
+            "NeedleRotationCenterX": 8.0,
+            "NeedleRotationCenterY": 53.0,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "UseArc": true,
+            "FileNameArc": "__generated\\dark_theme_images_widgets_gauge_small_fillers_swoop.png",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "SetArcPosition": true,
+            "ArcX": 19.0,
+            "ArcY": 19.0,
+            "ArcWidth": 146.0,
+            "ArcHeight": 108.0,
+            "ArcRadius": 79.0,
+            "ArcLineWidth": 78.0,
+            "ArcCapStyle": "Butt",
+            "Alpha": 224
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back_Menu",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BackButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Main_Menu"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Select_Target",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "backgronds",
+            "Width": 800,
+            "Height": 480,
+            "RelativeFilename": "__generated\\dark_theme_images_backgrounds_800x480_hive.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "Title_Bar",
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\dark_theme_images_bars_800x480_bottom_dim_dark.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Title",
+            "X": 244,
+            "Y": 16,
+            "Width": 312,
+            "Height": 48,
+            "TextId": "__SingleUse_L4J9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Disc1",
+            "X": 261,
+            "Y": 90,
+            "Width": 278,
+            "Height": 24,
+            "TextId": "__SingleUse_2A8Y",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 89,
+              "Green": 247,
+              "Blue": 74
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "BackButton",
+            "X": 670,
+            "Y": 424,
+            "Width": 100,
+            "Height": 36,
+            "Pressed": "__generated\\dark_theme_images_widgets_button_regular_height_36_tiny_round_pressed.png",
+            "Released": "__generated\\dark_theme_images_widgets_button_regular_height_36_tiny_round_normal.png",
+            "IconPressed": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_navigation_chevron_left_50_50_E8F6FB.svg.png",
+            "IconX": 25,
+            "IconY": -7,
+            "IconHeight": 50,
+            "IconWidth": 50,
+            "Preset": "dark_theme\\presets\\button\\regular\\height_36\\tiny_round_normal.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Deg_Val",
+            "X": 305,
+            "Y": 269,
+            "Width": 234,
+            "Height": 36,
+            "TextId": "__SingleUse_1USH",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_F2V8",
+              "UseBuffer": true,
+              "BufferSize": 5
+            }
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle1",
+            "X": 361,
+            "Y": 128,
+            "Width": 80,
+            "Height": 80,
+            "Color": {
+              "Red": 209,
+              "Green": 209,
+              "Blue": 209
+            },
+            "CenterX": 40.0,
+            "CenterY": 40.0,
+            "Radius": 40.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 377,
+            "Y": 143,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "__generated\\icon_theme_images_action_account_box_50_50_000000.svg.png"
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle2",
+            "X": 533,
+            "Y": 180,
+            "Width": 80,
+            "Height": 80,
+            "Color": {
+              "Red": 238,
+              "Green": 255
+            },
+            "CenterX": 40.0,
+            "CenterY": 40.0,
+            "Radius": 40.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "X": 549,
+            "Y": 195,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "__generated\\icon_theme_images_action_alarm_50_50_000000.svg.png"
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle3",
+            "X": 533,
+            "Y": 327,
+            "Width": 80,
+            "Height": 80,
+            "Color": {
+              "Red": 209,
+              "Green": 209,
+              "Blue": 209
+            },
+            "CenterX": 40.0,
+            "CenterY": 40.0,
+            "Radius": 40.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 549,
+            "Y": 342,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "__generated\\icon_theme_images_action_article_50_50_000000.svg.png"
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle4",
+            "X": 360,
+            "Y": 377,
+            "Width": 80,
+            "Height": 80,
+            "Color": {
+              "Red": 209,
+              "Green": 209,
+              "Blue": 209
+            },
+            "CenterX": 40.0,
+            "CenterY": 40.0,
+            "Radius": 40.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Image",
+            "Name": "image4",
+            "X": 376,
+            "Y": 392,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "__generated\\icon_theme_images_action_assignment_turned_in_50_50_000000.svg.png"
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle5",
+            "X": 194,
+            "Y": 327,
+            "Width": 80,
+            "Height": 80,
+            "Color": {
+              "Red": 209,
+              "Green": 209,
+              "Blue": 209
+            },
+            "CenterX": 40.0,
+            "CenterY": 40.0,
+            "Radius": 40.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Image",
+            "Name": "image5",
+            "X": 210,
+            "Y": 342,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "__generated\\icon_theme_images_action_autorenew_50_50_000000.svg.png"
+          },
+          {
+            "Type": "Circle",
+            "Name": "circle6",
+            "X": 194,
+            "Y": 180,
+            "Width": 80,
+            "Height": 80,
+            "Color": {
+              "Red": 209,
+              "Green": 209,
+              "Blue": 209
+            },
+            "CenterX": 40.0,
+            "CenterY": 40.0,
+            "Radius": 40.0,
+            "EndAngle": 360.0,
+            "CapPrecision": "Butt"
+          },
+          {
+            "Type": "Image",
+            "Name": "image6",
+            "X": 210,
+            "Y": 195,
+            "Width": 50,
+            "Height": 50,
+            "RelativeFilename": "__generated\\icon_theme_images_action_announcement_50_50_000000.svg.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Back_Menu",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BackButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Main_Menu"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "HandPosture_Demo",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Main_Menu",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "24": "LCD24bpp",
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "FlashTargetIntCommandOverride": "make -f ../gcc/Makefile intflash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7",
+    "SubFamily": "STM32F7x9",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../HandPosture_Demo_F7.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.24.0",
+  "CreatedBy": "4.24.0"
+}

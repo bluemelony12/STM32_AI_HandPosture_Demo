@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.24.0">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_F2V8" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_1USH" Alignment="Center" TypographyId="Typography_01">
+        <Translation Language="GB">Degree : &lt;value&gt;°</Translation>
+      </Text>
+      <Text Id="__SingleUse_2A8Y" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Rotate your hand in a circle</Translation>
+      </Text>
+      <Text Id="__SingleUse_L4J9" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Select Target</Translation>
+      </Text>
+      <Text Id="__SingleUse_JSQ5" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_1V3J" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Dim : &lt;value&gt;%</Translation>
+      </Text>
+      <Text Id="__SingleUse_SCMP" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Select Target</Translation>
+      </Text>
+      <Text Id="__SingleUse_0S7M" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Light Dim Control</Translation>
+      </Text>
+      <Text Id="__SingleUse_HUUO" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Hand Posture</Translation>
+      </Text>
+      <Text Id="__SingleUse_AQQ0" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Light Dim Control</Translation>
+      </Text>
+      <Text Id="__SingleUse_CT22" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Move your hand up or down to change dimming</Translation>
+      </Text>
+      <Text Id="__SingleUse_L67M" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_XYPM" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Value3</Translation>
+      </Text>
+      <Text Id="__SingleUse_LV25" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt; (&lt;value&gt;%)</Translation>
+      </Text>
+      <Text Id="__SingleUse_TJ8C" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q1BX" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Value2</Translation>
+      </Text>
+      <Text Id="__SingleUse_FXVI" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt; (&lt;value&gt;%)</Translation>
+      </Text>
+      <Text Id="__SingleUse_4CKG" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_F6R3" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">Value1</Translation>
+      </Text>
+      <Text Id="__SingleUse_4OJ2" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">Hand Posture</Translation>
+      </Text>
+      <Text Id="__SingleUse_FR96" Alignment="Left" TypographyId="Typography_01">
+        <Translation Language="GB">&lt;value&gt; (&lt;value&gt;%)</Translation>
+      </Text>
+      <Text Id="__SingleUse_E1JC" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Change your hand shape in front of the sensor</Translation>
+      </Text>
+      <Text Id="__SingleUse_8TG1" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">github.com/bluemelony12</Translation>
+      </Text>
+      <Text Id="__SingleUse_NAQV" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Please select a menu</Translation>
+      </Text>
+      <Text Id="__SingleUse_OU2G" Alignment="Left" TypographyId="Typography_00">
+        <Translation Language="GB">ToF Hand Posture Demo</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,A-Z,a-z" />
+    <Typography Id="Typography_00" Font="SourceCodePro-Bold.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,A-Z,a-z" />
+    <Typography Id="Typography_01" Font="SourceCodePro-Bold.ttf" Size="30" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9,A-Z,a-z" />
+  </Typographies>
+</TextDatabase>
