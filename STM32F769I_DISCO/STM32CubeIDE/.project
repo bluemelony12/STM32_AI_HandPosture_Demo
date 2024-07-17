@@ -810,29 +810,24 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_Dim10.cpp</name>
+			<name>Application/User/generated/image_Dim100_B.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim10.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim100_B.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_Dim100.cpp</name>
+			<name>Application/User/generated/image_Dim100_G.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim100.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim100_G.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_Dim30.cpp</name>
+			<name>Application/User/generated/image_Dim100_R.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim30.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim100_R.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_Dim50.cpp</name>
+			<name>Application/User/generated/image_Dim100_Y.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim50.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_Dim70.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim70.cpp</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Dim100_Y.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Dislike.cpp</name>

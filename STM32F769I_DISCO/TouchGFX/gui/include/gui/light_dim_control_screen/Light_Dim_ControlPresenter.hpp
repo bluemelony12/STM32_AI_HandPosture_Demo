@@ -28,6 +28,7 @@ public:
     virtual ~Light_Dim_ControlPresenter() {}
 
     void notifyLevelDataChanged(int newLevel);
+    void notifyLeftRightDataChanged(int newLeftRight);
 
 private:
     Light_Dim_ControlPresenter();

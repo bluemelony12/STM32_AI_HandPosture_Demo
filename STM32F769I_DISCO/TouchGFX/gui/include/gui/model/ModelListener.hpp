@@ -19,6 +19,7 @@ public:
     virtual void notifyPostureVDataChanged(int* newPostureV) {}
     virtual void notifyLevelDataChanged(int newLevel) {}
     virtual void notifyDegreeDataChanged(int newDegree) {}
+    virtual void notifyLeftRightDataChanged(int newLeftRight) {}
 
 protected:
     Model* model;

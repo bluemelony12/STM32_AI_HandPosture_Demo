@@ -28,6 +28,8 @@ private:
 
     int CurrentLevelData = 0;
     int CurrentDegreeData = 0;
+
+    int LeftRightSign = 0;
 };
 
 #endif // MODEL_HPP

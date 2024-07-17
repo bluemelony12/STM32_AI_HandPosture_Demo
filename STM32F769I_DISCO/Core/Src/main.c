@@ -1508,6 +1508,7 @@ void StartDefaultTask(void *argument)
 
 				Txmsg.Level = RxBuffer[7];
 				Txmsg.Degree = RxBuffer[8];
+				Txmsg.LeftRight = RxBuffer[9];
 
 				osMessageQueuePut(SensorQHandle, &Txmsg, 0, 10);
 			}

@@ -16,8 +16,8 @@ typedef struct {
   uint8_t PostureV[3];
   uint8_t Level;
   uint8_t Degree;
-  uint8_t TestVal1;
-  uint8_t TestVal2;
+  uint8_t LeftRight;
+  uint8_t TestVal;
 } MSGQUEUE_OBJ_t;
 
 

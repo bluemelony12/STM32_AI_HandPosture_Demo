@@ -21,3 +21,8 @@ void Light_Dim_ControlPresenter::notifyLevelDataChanged(int newLevel)
 {
 	view.setLevel(newLevel);
 }
+
+void Light_Dim_ControlPresenter::notifyLeftRightDataChanged(int newLeftRight)
+{
+	view.setColor(newLeftRight);
+}

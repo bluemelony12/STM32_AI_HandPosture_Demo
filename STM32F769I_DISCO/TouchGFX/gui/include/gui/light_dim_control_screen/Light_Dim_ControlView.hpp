@@ -14,9 +14,14 @@ public:
     virtual void handleTickEvent();
 
     void setLevel(int newData);
+    void setColor(int newData);
 
 protected:
 
+private:
+    int colorindex = 0;
+    int newlevel = 0;
+    int newalpha = 0;
 };
 
 #endif // LIGHT_DIM_CONTROLVIEW_HPP

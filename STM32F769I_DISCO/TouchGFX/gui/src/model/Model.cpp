@@ -30,12 +30,15 @@ void Model::tick()
 		CurrentLevelData = Rxmsg.Level;
 		CurrentDegreeData = Rxmsg.Degree;
 
+		LeftRightSign = Rxmsg.LeftRight;
+
 		if(modelListener != 0)
 		{
 			modelListener->notifyPostureRDataChanged(CurrentPostureRData);
 			modelListener->notifyPostureVDataChanged(CurrentPostureVData);
 			modelListener->notifyLevelDataChanged(CurrentLevelData);
 			modelListener->notifyDegreeDataChanged(CurrentDegreeData);
+			modelListener->notifyLeftRightDataChanged(LeftRightSign);
 		}
 	}
 }

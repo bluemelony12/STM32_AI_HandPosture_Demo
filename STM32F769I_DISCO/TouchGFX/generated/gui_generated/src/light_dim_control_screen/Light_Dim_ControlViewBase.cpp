@@ -48,7 +48,7 @@ Light_Dim_ControlViewBase::Light_Dim_ControlViewBase() :
     add(Bulb);
 
     DimLight.setXY(192, 171);
-    DimLight.setBitmap(touchgfx::Bitmap(BITMAP_DIM10_ID));
+    DimLight.setBitmap(touchgfx::Bitmap(BITMAP_DIM100_Y_ID));
     add(DimLight);
 
     Dim_Val.setXY(514, 353);
