@@ -1,0 +1,5 @@
+../Core/Src/gestures_example.c:28:6:select_target_index	1
+../Core/Src/gestures_example.c:36:5:SEN_CopyRangingData	10
+../Core/Src/gestures_example.c:68:6:Add_SensorTxData_Gesture	5
+../Core/Src/gestures_example.c:102:6:Gesture_print_uart	10
+../Core/Src/gestures_example.c:161:5:gesture_library_init_configure	5

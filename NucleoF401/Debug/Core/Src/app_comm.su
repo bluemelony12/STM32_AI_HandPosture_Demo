@@ -1,0 +1,11 @@
+../Core/Src/app_comm.c:72:12:Parse_Enable	16	static
+../Core/Src/app_comm.c:83:12:Parse_Disable	16	static
+../Core/Src/app_comm.c:99:5:SC_HandleCmd	40	static
+../Core/Src/app_comm.c:155:6:Comm_HandleCmd	16	static
+../Core/Src/app_comm.c:170:27:__io_putchar	24	static
+../Core/Src/app_comm.c:176:27:__io_getchar	16	static
+../Core/Src/app_comm.c:188:6:Comm_Start	24	static
+../Core/Src/app_comm.c:203:6:Add_SensorTxData_Network	72	static
+../Core/Src/app_comm.c:261:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/app_comm.c:313:6:HAL_UART_ErrorCallback	16	static
+../Core/Src/app_comm.c:328:6:Comm_HandleRxCMD	16	static

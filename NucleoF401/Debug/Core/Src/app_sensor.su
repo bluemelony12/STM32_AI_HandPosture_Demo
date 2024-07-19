@@ -1,0 +1,6 @@
+../Core/Src/app_sensor.c:40:16:apps_layer_vl53lmz_Configure	24	static
+../Core/Src/app_sensor.c:96:6:Sensor_Init	16	static
+../Core/Src/app_sensor.c:118:6:Sensor_StartRanging	16	static
+../Core/Src/app_sensor.c:148:6:Sensor_GetRangingData	16	static
+../Core/Src/app_sensor.c:186:6:Sensor_StopRanging	16	static
+../Core/Src/app_sensor.c:209:6:HAL_GPIO_EXTI_Callback	16	static

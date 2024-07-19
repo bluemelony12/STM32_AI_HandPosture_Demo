@@ -1,0 +1,9 @@
+../Drivers/BSP/platform.c:23:9:LMZ_platform_init	1
+../Drivers/BSP/platform.c:31:9:RdByte	1
+../Drivers/BSP/platform.c:49:9:WrByte	1
+../Drivers/BSP/platform.c:65:9:WrMulti	1
+../Drivers/BSP/platform.c:77:9:RdMulti	1
+../Drivers/BSP/platform.c:94:9:Reset_Sensor	1
+../Drivers/BSP/platform.c:120:6:SwapBuffer	2
+../Drivers/BSP/platform.c:140:9:WaitMs	1
+../Drivers/BSP/platform.c:148:9:wait_for_ToF_interrupt	2

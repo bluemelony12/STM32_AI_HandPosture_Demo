@@ -1,0 +1,6 @@
+../Drivers/BSP/Components/VL53LMZ/vl53lmz_plugin_detection_thresholds.c:15:9:vl53lmz_get_detection_thresholds_enable	24	static
+../Drivers/BSP/Components/VL53LMZ/vl53lmz_plugin_detection_thresholds.c:28:9:vl53lmz_set_detection_thresholds_enable	40	static
+../Drivers/BSP/Components/VL53LMZ/vl53lmz_plugin_detection_thresholds.c:59:9:vl53lmz_get_detection_thresholds	24	static
+../Drivers/BSP/Components/VL53LMZ/vl53lmz_plugin_detection_thresholds.c:107:9:vl53lmz_set_detection_thresholds	32	static
+../Drivers/BSP/Components/VL53LMZ/vl53lmz_plugin_detection_thresholds.c:162:9:vl53lmz_get_detection_thresholds_auto_stop	24	static
+../Drivers/BSP/Components/VL53LMZ/vl53lmz_plugin_detection_thresholds.c:175:9:vl53lmz_set_detection_thresholds_auto_stop	40	static

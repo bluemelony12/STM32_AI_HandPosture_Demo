@@ -1,0 +1,12 @@
+../Core/Src/app_network.c:78:12:argmax	4
+../Core/Src/app_network.c:99:12:label_filter	4
+../Core/Src/app_network.c:129:12:AI_Init	3
+../Core/Src/app_network.c:178:12:AI_Run	1
+../Core/Src/app_network.c:193:12:AI_CopyInputData	2
+../Core/Src/app_network.c:221:12:ValidateFrame	14
+../Core/Src/app_network.c:265:12:NormalizeData	2
+../Core/Src/app_network.c:286:12:output_selection	2
+../Core/Src/app_network.c:315:6:Network_Init	2
+../Core/Src/app_network.c:331:6:Network_Preprocess	6
+../Core/Src/app_network.c:369:6:Network_Inference	5
+../Core/Src/app_network.c:393:6:Network_Postprocess	3
