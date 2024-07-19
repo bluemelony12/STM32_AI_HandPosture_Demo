@@ -2,21 +2,21 @@
 
 ## Description
 This project is a demonstration of hand posture, motion recognition using VL53L8 ToF sensors and X-CUBE-AI.  
-The projects referenced in the production are [STM32 Model Zoo's handposture](https://github.com/STMicroelectronics/stm32ai-modelzoo) and [STSW-IMG035_F401 Gesture sample code](https://www.st.com/en/embedded-software/stsw-img035.html).  
+Projects referenced [STM32 Model Zoo's handposture](https://github.com/STMicroelectronics/stm32ai-modelzoo) and [STSW-IMG035_F401 Gesture sample code](https://www.st.com/en/embedded-software/stsw-img035.html).  
 
 Development targets are stm32F769i disco board Nucleo F401RF board and X-NUCLEO-53L8A1 board.    
 
 ![ToF Sensor1](https://github.com/user-attachments/assets/85e90bd6-307d-4faf-9c10-9f92bffb8918)  
 
-Nucleo F401RE connected to the X-NUCLEO-53L8A1 board, receives VL53L8 ToF sensor data and recognizes hand posture, motions through CNN model processing using X-CUBE-AI and the GesturesMZ library in the Gestures sample code.  
-Processed hand motion values are transmitted to the STM32F769I-DISCO board via Uart com, and results are displayed GUI.  
+Nucleo F401RE connected to X-NUCLEO-53L8A1 board, receives VL53L8 ToF sensor data and recognizes hand posture, motions through CNN model processing using X-CUBE-AI and GesturesMZ library in Gestures sample code.  
+Processed hand motion values are transmitted to STM32F769I-DISCO board via Uart com, and results are displayed GUI.  
 
-There are three menus in the GUI.  
-1. Recognizes the posture of the hand(Using X-CUBE-AI)    
+There are three menus in GUI.  
+1. Recognizes posture of hand(Using X-CUBE-AI)    
 2. Recognizes hand height and heigh(Using GesturesMZ lib)  
-3. Recognizes the position of the hand(Using GesturesMZ lib)  
+3. Recognizes position of hand(Using GesturesMZ lib)  
 
-The GUI is built with Touchgfx, and you can move the menu with the touch of the screen.
+GUI is built with Touchgfx, and you can move menu with touch of screen.
 
 
 **--Version--**  
@@ -124,16 +124,16 @@ AI model uses a pre-trained CNN 2D model in STM32 Model Zoo.
 (ref. https://github.com/STMicroelectronics/stm32ai-modelzoo/tree/main/hand_posture)  
 
 ## How to run
-1. Run the .project file in the F401RE and F769I folders to add a project to the CubeIDE.  
+1. Run .project file in F401RE and F769I dir to add a project to CubeIDE.  
 (Merging may be necessary due to differences in program versions.)
 3. Build project. (Target: Nucleo-F401RE, STM32F769i disco board)
-4. Connect the target board and RUN it.
-5. Connect the X-NUCLEO-53L8A1 board to the Nucleo-F401RE and connect the UART line to the STM32F769I DISCO board as shown in the picture below.  
+4. Connect target board and RUN it.
+5. Connect X-NUCLEO-53L8A1 board to Nucleo-F401RE and Connect UART line STM32F769I DISCO board as shown in picture below.  
    
 ![F4_Pin](https://github.com/user-attachments/assets/ab5bde20-48dc-4217-b75f-0a700b753350)  
 ![F7_Pin](https://github.com/user-attachments/assets/b82c1d54-a73f-4923-bf77-7ce89ec6fc34)  
 
-7. Press the desired menu in the GUI to move the screen, then detect the hand gesture on the sensor, and the result is output.  
+7. Press desired menu in GUI to move screen, and then detect hand gesture on sensor, result is output.  
 
 ## Menu Preview
 **1. Hand Posture**   
@@ -152,7 +152,7 @@ https://github.com/user-attachments/assets/0ec3457b-cf05-4496-bd4a-7ae7c6f7803c
 
 ![menu2_1](https://github.com/user-attachments/assets/03970c95-20ce-4114-a7b9-48a403e534e4)  
 
-Change the Dimming from 0 to 100 depending on the hand height of the sensor (up to about 30 cm).
+Change Dimming from 0 to 100 depending on hand height of sensor (up to about 30 cm).
 
 ![menu2_2](https://github.com/user-attachments/assets/df5a20b5-e5fc-418a-bdd6-54c16025c537)  
 
@@ -164,7 +164,7 @@ https://github.com/user-attachments/assets/426a58dd-b0b9-40c4-8a46-94bd820900e8
 
 ![menu3_1](https://github.com/user-attachments/assets/441f3d82-0ec2-4fcf-ae1c-468b3373de45)  
 
-Select the 0-360 degree menu depending on the position of the hand of the sensor.
+Select 0-360 degree menu depending on position of hand of sensor.
 
 ![menu3_2](https://github.com/user-attachments/assets/0fd1adaa-6524-4deb-844d-f7a6768e853b)  
 
@@ -177,8 +177,10 @@ https://github.com/user-attachments/assets/3dfbdc69-15ec-4241-8792-f95f8ef60050
 
 
 ## Issue
-1. Due to the fast sensor operation speed, communication loss between boards occurs occasionally.
-2. This project is intended for personal study and may be of low quality. :worried::worried:
+1. Due to fast sensor operation speed, communication loss between boards occurs occasionally.  
+2. I don't know why, syscalls.c file disappears when code is regenerated through CubeMX in NucleoF401 project.  
+3. This project is intended for personal study and may be of low quality. :worried::worried:
+   
 
 
 
