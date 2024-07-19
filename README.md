@@ -133,11 +133,43 @@ AI model uses a pre-trained CNN 2D model in STM32 Model Zoo.
 ![F4_Pin](https://github.com/user-attachments/assets/ab5bde20-48dc-4217-b75f-0a700b753350)  
 ![F7_Pin](https://github.com/user-attachments/assets/b82c1d54-a73f-4923-bf77-7ce89ec6fc34)  
 
-7. Press the desired menu in the GUI to move the screen, then detect the hand gesture on the sensor, and the result is output.
-
+7. Press the desired menu in the GUI to move the screen, then detect the hand gesture on the sensor, and the result is output.  
 
 ## Menu Preview
+**1. Hand Posture**   
 
+![menu1_1](https://github.com/user-attachments/assets/d1d6474d-c2b0-4e4c-aff0-e026d2da0e15)  
+
+Recognize a total of 7 hand motions (Flat, Fist, Like, Dislike, Love, Time, Cross).  
+
+![Menu1_2](https://github.com/user-attachments/assets/1230a84c-74b9-422b-8c78-f960e406aec6)  
+
+Video.  
+https://github.com/user-attachments/assets/0ec3457b-cf05-4496-bd4a-7ae7c6f7803c  
+#
+
+**2. Light Dim Control**   
+
+![menu2_1](https://github.com/user-attachments/assets/03970c95-20ce-4114-a7b9-48a403e534e4)  
+
+Change the Dimming from 0 to 100 depending on the hand height of the sensor (up to about 30 cm).
+
+![menu2_2](https://github.com/user-attachments/assets/df5a20b5-e5fc-418a-bdd6-54c16025c537)  
+
+Video.  
+https://github.com/user-attachments/assets/426a58dd-b0b9-40c4-8a46-94bd820900e8  
+#
+
+**3. Select Target**   
+
+![menu3_1](https://github.com/user-attachments/assets/441f3d82-0ec2-4fcf-ae1c-468b3373de45)  
+
+Select the 0-360 degree menu depending on the position of the hand of the sensor.
+
+![menu3_2](https://github.com/user-attachments/assets/0fd1adaa-6524-4deb-844d-f7a6768e853b)  
+
+Video.  
+https://github.com/user-attachments/assets/3dfbdc69-15ec-4241-8792-f95f8ef60050  
 
 
 
