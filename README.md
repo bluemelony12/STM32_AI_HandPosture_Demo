@@ -10,9 +10,9 @@ Development targets are stm32F769i disco board Nucleo F401RF board and X-NUCLEO-
 The Nucleo F401RF, connected to the X-NUCLEO-53LxA1 board, receives VL53L8 ToF sensor data and recognizes hand motions through CNN model processing using X-CUBE-AI and the GesturesMZ library in the Gestures sample code.  
 Processed hand motion values are transmitted to the STM32F769I-DISCO board via Uart communication, and the results are displayed via GUI.  
 There are three menus in the GUI.  
-1. Recognizes the shape of the hand  
-2. Recognizes hand height and height  
-3. Recognizes the position of the hand
+1. Recognizes the shape of the hand(Using X-CUBE-AI)    
+2. Recognizes hand height and heigh(Using GesturesMZ lib)  
+3. Recognizes the position of the hand(Using GesturesMZ lib)  
 
 The GUI is built with Touchgfx, and you can move the menu with the touch of the screen.
 
@@ -21,48 +21,99 @@ STM32CUBE F7 v1.17.2
 STM32CUBE MX 6.11.1 
 STM32CUBE IDE 1.15.1  
 X-CUBE-AI 9.0.0
-TouchGFX 4.24
+TouchGFX 4.24  
 
 ## Project Structure
 ```
-STM32_AI_Handwrite
-├─ .ai
-├─ .cproject
-├─ .gitignore
+STM32_AI_HandPosture_Demo
+
+├─ NucleoF403
+│  ├─ .ai
+│  ├─ .cproject
+│  ├─ .mxproject
+│  ├─ .project
+│  ├─ .settings
+│  ├─ CNN2D_ST_HandPosture_8classes.h5
+│  ├─ Core
+│  │  ├─ Inc
+│  │  └─ Src
+│  ├─ Drivers
+│  │  ├─ BSP
+│  │  │  ├─ Components
+│  │  │  │  └─ VL53LMZ
+│  │  │  ├─ platform.c
+│  │  │  └─ platform.h
+│  │  ├─ CMSIS
+│  │  └─ STM32F4xx_HAL_Driver
+│  ├─ GesturesMZ
+│  ├─ HandPosture_Demo_F4 Debug.launch
+│  ├─ HandPosture_Demo_F4.ioc
+│  ├─ Middlewares
+│  │  └─ ST
+│  │     └─ AI
+│  ├─ STM32F401RETX_FLASH.ld
+│  ├─ STM32F401RETX_RAM.ld
+│  ├─ X-CUBE-AI
+│  └─ startup
+├─ README.md
+
+├─ STM32F769I_DISCO
+├─ .extSettings
 ├─ .mxproject
-├─ .project -----------------------------> Main project file
-├─ BSP ----------------------------------> BSP for LCD and touch screen use
-│  ├─ Components
-│  │  ├─ nt35510
-│  │  ├─ otm8009a
-│  │  └─ ts.h
-│  ├─ stm32f769i_discovery.c
-│  ├─ stm32f769i_discovery.h
-│  ├─ stm32f769i_discovery_lcd.c
-│  ├─ stm32f769i_discovery_lcd.h
-│  ├─ stm32f769i_discovery_sdram.c
-│  ├─ stm32f769i_discovery_sdram.h
-│  ├─ stm32f769i_discovery_ts.c
-│  └─ stm32f769i_discovery_ts.h
-├─ Core --------------------------------> Main application code
+├─ Core
 │  ├─ Inc
-│  ├─ Src
-│  └─ Startup
-├─ Drivers -----------------------------> HAL Driver
+│  └─ Src
+├─ Drivers
+│  ├─ BSP
+│  │  └─ Components
+│  │     ├─ Common
+│  │     ├─ ft6x06
+│  │     ├─ mx25l512
+│  │     └─ otm8009a
 │  ├─ CMSIS
 │  └─ STM32F7xx_HAL_Driver
-├─ HandWriteNumber.tflite --------------> Model converted to TensorFlow Lite
-├─ Hand_Write_Number.ipynb -------------> My CNN model code (Jupyter Notebook)
+├─ HandPosture_Demo_F7.ioc
+├─ LIBJPEG
 ├─ Middlewares
-│  └─ ST
-│     └─ AI ----------------------------> X-CUBE-AI middleware package
-├─ Number_Check.ioc --------------------> CubeMX .ioc File
-├─ Number_Check.launch
-├─ README.md
-├─ STM32F769NIHX_FLASH.ld
-├─ STM32F769NIHX_RAM.ld
-├─ X-CUBE-AI ---------------------------> X-CUBE-AI generate file
-└─ best-HandWriteNumber.h5 
+
+│  ├─ ST
+│  │  └─ touchgfx
+│  └─ Third_Party
+│     ├─ FreeRTOS
+├─ STM32CubeIDE
+│  ├─ .cproject
+│  ├─ .project
+│  ├─ .settings
+│  ├─ Application
+│  ├─ Drivers
+│  ├─ HandPosture_Demo_F7 Debug.launch
+│  ├─ Middlewares
+│  ├─ STM32F769I_DISCO.launch
+│  ├─ STM32F769NIHX_FLASH.ld
+│  └─ STM32F769NIHX_RAM.ld
+├─ TouchGFX
+│  ├─ App
+│  ├─ ApplicationTemplate.touchgfx.part
+│  ├─ HandPosture_Demo.touchgfx
+│  ├─ MATERIAL-ICONS-LICENSE
+│  ├─ application.config
+│  ├─ assets
+│  ├─ build
+│  ├─ config
+│  ├─ generated
+│  │  ├─ gui_generated
+│  │  ├─ images
+│  │  ├─ simulator
+│  │  ├─ texts
+│  │  └─ videos
+│  ├─ gui
+│  │  ├─ include
+│  │  └─ src
+│  ├─ simulator
+│  ├─ target.config
+│  └─ target
+├─ changelog.txt
+└─ readme.md
 ```
 
 ## AI Model Information  
