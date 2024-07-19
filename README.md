@@ -1,4 +1,4 @@
-# Hand motion recognition demonstration using ToF sensor
+# Hand Motion Recognition Demo
 
 ## Description
 This project is a demonstration of hand posture, motion recognition using VL53L8 ToF sensors and X-CUBE-AI.  
